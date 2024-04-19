@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: player_performance
+    description: Aggregated performance metrics at the player level
+    columns:
+      - name: player_id
+        description: The ID of the player
+        tests:
+          - not_null
+          - unique
+      - name: total_goals
+        description: The total number of goals scored by the player
+        tests:
+          - not_null
+      - name: total_assists
+        description: The total number of assists made by the player
+        tests:
+          - not_null
+      - name: total_yellow_cards
+        description: The total number of yellow cards received by the player
+        tests:
+          - not_null
+      - name: total_red_cards
+        description: The total number of red cards received by the player
+        tests:
+          - not_null
+      - name: total_minutes_played
+        description: The total number of minutes played by the player
+        tests:
+          - not_null
