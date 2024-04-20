@@ -97,7 +97,7 @@ As shown in image our data flow consists of below section:
 **3. DBT transformations**:
 - will be using dbt cloud cli and github actions, authenticated with our bigquery dataset to do our data model
 - our 3 models are aimed to manipulate our to get the data to the analytics ready phase, 3 models are create with a schema:
-    - models > schema.yml file:
+    - models > `schema.yml` file:
     ```yml
     version: 2
 
