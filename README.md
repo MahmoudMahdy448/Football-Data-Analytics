@@ -31,10 +31,6 @@ The dataset is composed of multiple CSV files with information on competitions, 
     - **Reporting Layer**: Built in models.
 
 
-
-
-
-
 ### Data Pipeline Flow
 
 ![alt text](resources/image.png)
@@ -47,11 +43,22 @@ As shown in image our data flow consists of below section:
         - file for all players appearances in all europe competition.
         - file for all players data.
         - file for all competitions data etc.
+
+        ![alt text](resources/image2.png)
+
     - steps to ingest the data directly to gcs:
-        1- Import your Kaggle API Key (kaggle.json file)to Cloud Shell
-        2- Get your GCP Project-ID and the dataset you want to downlaod
-        3- execute it on Cloud Shell
+        - Import your Kaggle API Key (kaggle.json file)to Cloud Shell
+        - Get your GCP Project-ID and the dataset you want to downlaod
+        - execute it on Cloud Shell
+
         ```bash
         #run this command into you vm cloud bash
         ./download_from_kaggle.sh [DATASET] [Your-GCP-Project-ID]
         ```
+        - data is unzipped and are ready in the gcs bucket
+
+        ![alt text](resources/image3.png)
+
+
+**2. Data orchestration**:
+
