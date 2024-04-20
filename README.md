@@ -33,7 +33,7 @@ The dataset is composed of multiple CSV files with information on competitions, 
 
 ### Data Pipeline Flow
 
-![alt text](resources/image.png)
+![alt text](resources/image.jpeg)
 
 As shown in image our data flow consists of below section:
 
@@ -61,4 +61,20 @@ As shown in image our data flow consists of below section:
 
 
 **2. Data orchestration**:
+- setting up mage instance:
+    ```bash
+    git clone https://github.com/mage-ai/mage-zoomcamp.git mage-zoomcamp
+    ```
+- Navigate to the repo:
+    ```bash
+    cd mage-data-engineering-zoomcamp
+    ```
+- Rename dev.env to simply .env— this will ensure the file is not committed to Git by accident, since it will contain credentials in the future.
+
+- Now, let's build the container
+    ```bash
+    docker compose build
+    ```
+- Now, navigate to http://localhost:6789 in your browser! Voila! You're ready to get started with Mage.
+
 
