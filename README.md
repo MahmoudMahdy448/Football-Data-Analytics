@@ -33,7 +33,7 @@ The dataset is composed of multiple CSV files with information on competitions, 
 
 ### Data Pipeline Flow
 
-![alt text](resources/imag.jpeg)
+![alt text](resources/image.jpeg)
 
 As shown in image our data flow consists of below section:
 
