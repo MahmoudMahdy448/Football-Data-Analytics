@@ -21,6 +21,7 @@ services:
     volumes:
       - .:/home/src/
       - ~/Documents/secrets/personal-gcp.json:/home/src/personal-gcp.json
+      - ~/.kaggle:/root/.kaggle
     restart: on-failure:5
   postgres:
     image: postgres:14

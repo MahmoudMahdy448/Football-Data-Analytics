@@ -1,0 +1,74 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_appearances
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: loading_appearances_data
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: loading_appearances_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - exporting_appearances_to_bigquery
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: transform_appearances
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - loading_appearances_data
+  uuid: transform_appearances
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: exporting_appearances_to_bigquery
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - transform_appearances
+  uuid: exporting_appearances_to_bigquery
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-04-25 09:29:21.446116+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: appearances_data_pipeline
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: appearances_data_pipeline
+variables_dir: /home/src/mage_data/magic-zoomcamp
+widgets: []
