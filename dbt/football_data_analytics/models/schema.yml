@@ -1,0 +1,68 @@
+# models/schema.yml
+version: 2
+
+models:
+  - name: players_with_appearances
+    columns:
+      - name: name
+        tests:
+          - not_null
+          - unique
+      - name: is_retired
+        tests:
+          - not_null
+      - name: current_club_id
+        tests:
+          - not_null
+      - name: nationality
+        tests:
+          - not_null
+      - name: age
+        tests:
+          - not_null
+      - name: position
+        tests:
+          - not_null
+      - name: foot
+        tests:
+          - not_null
+      - name: height_in_cm
+        tests:
+          - not_null
+      - name: market_value_in_eur
+        tests:
+          - not_null
+      - name: highest_market_value_in_eur
+        tests:
+          - not_null
+      - name: minutes
+        tests:
+          - not_null
+      - name: goals
+        tests:
+          - not_null
+      - name: assists
+        tests:
+          - not_null
+      - name: yellow_cards
+        tests:
+          - not_null
+      - name: red_cards
+        tests:
+          - not_null
+      - name: year
+        tests:
+          - not_null
+
+  - name: goals_and_assists_over_time
+    columns:
+      - name: year
+        tests:
+          - not_null
+          - unique
+      - name: total_goals
+        tests:
+          - not_null
+      - name: total_assists
+        tests:
+          - not_null
