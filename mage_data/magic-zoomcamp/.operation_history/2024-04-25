@@ -1,0 +1,4 @@
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "football_data"}, "timestamp": 1714026284, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "football_data"}, "timestamp": 1714030722, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "football_data_pipeline"}, "timestamp": 1714037362, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "tables_data_pipeline"}, "timestamp": 1714039115, "user": null}
