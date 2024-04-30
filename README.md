@@ -31,7 +31,8 @@ The dataset is composed of multiple CSV files with information on competitions, 
 
 - **Looker Data Studio** 
     - **Dashboard**: - [Google Looker Studio](https://lookerstudio.google.com/reporting/c35d78dd-2bdb-4e86-a8b9-dff903235ddd).
-    ![alt text](image-2.png)
+    ![image](https://github.com/MahmoudMahdy448/Football-Data-Analytics/assets/82063772/79f1eddc-5323-445c-919e-262cf2996591)
+
 
 
 ### Data Pipeline Flow
@@ -142,4 +143,4 @@ Remember to navigate to your dbt project directory before running the `dbt run` 
     - Dashboard showing the Performance stats of players such as Goals, Assists, Market Value and more.
     
     - screenshot of the dashboard:
-        ![alt text](image-3.png)
+        ![image](https://github.com/MahmoudMahdy448/Football-Data-Analytics/assets/82063772/2a1cdd07-72ed-42ce-82b8-87dd796ae370)
